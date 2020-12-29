@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('mock_secrete_key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['167.172.158.115', '127.0.0.1', 'localhost']
 
 
 # Application definition
