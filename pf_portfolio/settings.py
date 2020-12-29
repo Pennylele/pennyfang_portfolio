@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('mock_secrete_key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['167.172.158.115', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['167.71.161.121', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -93,7 +93,7 @@ else:
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'pf_portfolio',
-            'USER': 'pf_porfolio',
+            'USER': 'pf',
             'PASSWORD': 'sh!nyWing84', # Need to secure this.
             'HOST': 'localhost',
             'PORT': '',
