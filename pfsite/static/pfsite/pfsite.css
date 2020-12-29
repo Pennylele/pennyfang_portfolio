@@ -1,0 +1,60 @@
+.name {
+  color: white;
+  font-size: 5em;
+  font-family: 'PT Mono', monospace;
+}
+
+.description{
+  color: white;
+  font-size: 2em;
+  font-family: 'PT Mono', monospace;
+}
+
+.titles{
+  text-align: center;
+}
+
+.index_page{
+  background: url("profile_4.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: 'Caveat Brush', cursive;
+}
+
+.socialmedia {
+  padding-left: 65%;
+}
+
+td {
+  padding-top: 10%;
+}
+
+.btn-xlarge {
+    padding: 10px 10px;
+    font-size: 1em;
+    font-family: 'PT Mono', monospace;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+
+.custom-button {
+  background-color: black;
+  width: 7em;
+  border-style: solid;
+  border-color: white;
+}
+
+a, a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.text-body{
+  font-size: 1.3em;
+  padding-top: 7%;
+  color:white !important
+}

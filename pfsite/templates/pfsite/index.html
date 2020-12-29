@@ -1,0 +1,32 @@
+{% extends 'pfsite/pfbase.html' %}
+
+{% block content %}
+<body class="index_page">
+  <div class="container titles">
+    <h1 class="name">Penny Fang</h1>
+    <p class="description">Software Engineer & Content Creator</p>
+  </div>
+
+  <div class="socialmedia">
+    <table class="table-responsive">
+      <table class="table table-borderless">
+        <tr>
+          <td><a href="{% url 'pfsite:projects' %}"><button type="button" class="btn btn-dark btn-xlarge custom-button">Portfolio</button></a></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.linkedin.com/in/le-penny-fang-9949607b/"><button type="button" class="btn btn-dark btn-xlarge custom-button">LinkedIn</button></a></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.youtube.com/channel/UC6TWeFeoh_oQLxv15hswNxQ"><button type="button" class="btn btn-dark btn-xlarge custom-button">YouTube</button></a></td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/Pennylele"><button type="button" class="btn btn-dark btn-xlarge custom-button">GitHub</button></a></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.instagram.com/pennbubble/"><button type="button" class="btn btn-dark btn-xlarge custom-button">Instagram</button></a></td>
+        </tr>
+      </table>
+    </table>
+  </div>
+</body>
+{% endblock %}

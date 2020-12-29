@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container" id="body">
+    <h1>Stock Checker</h1>
+    <form method="POST">
+    	{% csrf_token %}
+    	{{ form }}
+    	<button class="btn btn-dark" type="submit" name="button">Get Data</button>
+        {% if labels %}
+        <div class="container" id="conclusion">
+    	   <p id="calculation">Buy at price <strong>${{ buy }}</strong> on <strong>{{ buy_date }}</strong> and sell at price <strong>${{ sell }}</strong> on <strong>{{ sell_date }}</strong>.<br>The maximum profit within the past a few days is <strong>${{ maxPri }}</strong> per share.</p>
+        </div>
+        {% endif %}
+    	<p id="myLabels">{{ labels }}</p>
+    	<p id="myData">{{ prices }}</p>
+    </form>
+    <p id="result"></p>
+    <div class="container" id="chart">
+    	<canvas id="myChart" width="50" height="50"></canvas>
+    </div>
+</div>
+{% endblock %}

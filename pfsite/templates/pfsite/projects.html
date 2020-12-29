@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      </div>
+      <!-- about me -->
+      <div class="col-12">
+        <h1 id="aboutme">About Penny Fang</h1>
+        <div class="container profile_penny">
+          <img src="{% static 'pfsite/profile_0.jpg' %}" alt="penny" class="img-thumbnail">
+        </div>
+        <div class="text-body">
+          <p>Penny Fang is an aspring full stack Software Engineer and a content creator based in San Francisco, California.
+            She has the industry experience as a Localization Engineer for 5 years.
+            and is constantly seeking software engineering challenges and opportunities.
+            Please feel free to check her <a href="#">resume</a> or email <span class="email"><a href="mailto:fangle0121@gmail.com">fangle0121@gmail.com</a></span>
+            if there seems to be any potential fit for her.</p>
+        </div>
+      </div>
+      <!-- tech projects -->
+      <div class="col-12">
+        <h1 id="aboutme">Tech Projects</h1>
+
+        <!-- Row 1 -->
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="project-cards">
+          <div class="col">
+            <div class="card">
+              <img src="{% static 'pfsite/mock_interview.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mock Interview Site</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="https://www.themocksite.com" class="btn btn-primary">View project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="{% static 'pfsite/stock.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Stock Checker App</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="{% url 'stock:home' %}" class="btn btn-primary">View project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="{% static 'pfsite/sudoku.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sudoku Game On</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <a href="{% url 'sudoku:home' %}" class="btn btn-primary">View project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Row 2 -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="{% static 'pfsite/almond-n-chai.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Almond and Chai Blog</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="https://almond-n-chai.herokuapp.com/" class="btn btn-primary">View project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="{% static 'pfsite/vlog.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Penny Fang Vlog</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="{% url 'youtube:home' %}" class="btn btn-primary">View project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="{% static 'pfsite/timezone.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Timezone Pocket Daemon</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <a href="{% url 'timezone:timezone_home' %}" class="btn btn-primary">View project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="col-md-2 col-lg-3">
+      </div>
+    </div>
+  </div>
+{% endblock %}

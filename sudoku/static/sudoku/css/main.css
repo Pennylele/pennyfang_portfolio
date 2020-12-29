@@ -1,0 +1,17 @@
+.sudokuinput {
+    width: 3em;
+    height: 3em;
+}
+
+#solverbutton {
+    padding-top: 1em;
+}
+
+table, tr, td{
+    border: 1px solid black;
+}
+
+#instructions{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}

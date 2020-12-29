@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <!-- work history -->
+    <h1 id="sectiontitle">Work History</h1>
+    <!-- card 1 -->
+    <div class="card mb-3" id="resumecard" style="max-width: 800px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="{% static 'pfsite/venga.jpg' %}" alt="localization engineer">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Localization Engineer</h5>
+            <p class="card-text"><small class="text-muted">@Venga Global | 4 years 11 months</small></p>
+            <p class="card-text">Led complex and high-profile projects for critical accounts on the Localization Engineering process.
+              Scripted for automation in various Software/Website/App/Multimedia localization projects, which drove down manual processing time 25 times less.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card 2 -->
+    <div class="card mb-3" id="resumecard" style="max-width: 800px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="{% static 'pfsite/unitar.jpg' %}" alt="unitar">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Project Manager</h5>
+            <p class="card-text"><small class="text-muted">@United Nations Institute for Training & Research - UNITAR | 2 months</small></p>
+            <p class="card-text">Planned the project life cycle, including the scope, cost, timeline, and risks of the project.
+              Built the team for all tasks. Performed quality assurance through out the whole project.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card 3 -->
+    <div class="card mb-3" id="resumecard" style="max-width: 800px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="{% static 'pfsite/teacher.jpg' %}" alt="Chinese teacher">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Lead Chinese Teacher</h5>
+            <p class="card-text"><small class="text-muted">@Michigan State University | 9 months</small></p>
+            <p class="card-text">Classroom teaching and management. Student evaluation. People management. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <h1 id="sectiontitle">Education</h1>
+    <div class="card-group">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Master's of Computer Science</h5>
+        <p class="card-text"></p>
+        <p class="card-text"><small class="text-muted">@International Technological University | 2019 - 2020</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Master's of Translation and Localization Management</h5>
+        <p class="card-text"></p>
+        <p class="card-text"><small class="text-muted">@Middlebury Institute of International Studies at Monterey | 2013 - 2015</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Master's of Teaching English to Speakers of Other Languages</h5>
+        <p class="card-text"></p>
+        <p class="card-text"><small class="text-muted">@Michigan State University | 2011 - 2013</small></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- test -->
+
+    <!-- courses taken -->
+    <h1 id="sectiontitle">Courses Taken</h1>
+    <div class="card text-center">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">M.S. Computer Science</h5>
+        <p class="card-text">Computer Algorithm | Advanced Computer Algorithm | Software Engineering | OS & Distributed Systems | Cloud Computing</p>
+      </div>
+      <div class="card-footer text-muted">
+        GPA: 3.9
+      </div>
+    </div>
+    <!-- certificate -->
+    <h1 id="sectiontitle">Certificate</h1>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Python and Django Full Stack Web Developer Bootcamp</h5>
+            <p class="card-text"></p>
+            <a href="http://ude.my/UC-837bc473-acdc-434c-ba3f-b1c74478837" class="btn btn-primary">Certificate</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Software Processes and Agile Practices</h5>
+            <p class="card-text"></p>
+            <a href="https://www.coursera.org/account/accomplishments/verify/6ARUXR3BE5SK" class="btn btn-primary">Certificate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}
