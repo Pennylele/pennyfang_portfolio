@@ -16,7 +16,7 @@
           <p>Penny Fang is an aspring full stack Software Engineer and a content creator based in San Francisco, California.
             She has the industry experience as a Localization Engineer for 5 years.
             and is constantly seeking software engineering challenges and opportunities.
-            Please feel free to check her <a href="#">resume</a> or email <span class="email"><a href="mailto:fangle0121@gmail.com">fangle0121@gmail.com</a></span>
+            Please feel free to check her <a href="{% url 'pfsite:resume' %}">resume</a>, chat with her, or email <span class="email"><a href="mailto:fangle0121@gmail.com">fangle0121@gmail.com</a></span>
             if there seems to be any potential fit for her.</p>
         </div>
       </div>
@@ -31,7 +31,9 @@
               <img src="{% static 'pfsite/mock_interview.jpg' %}" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Mock Interview Site</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">This website provides users a platform to do mock tech interview practices
+                  with their peers by using a live video and code editor. Users can also register
+                  with the site for peer invite and see their interview session history.</p>
                 <a href="https://www.themocksite.com" class="btn btn-primary">View project</a>
               </div>
             </div>
@@ -41,7 +43,8 @@
               <img src="{% static 'pfsite/stock.jpg' %}" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Stock Checker App</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">This web app allows users to check a selected stock's performance over the past a few days.
+                  And it calculates the best time to buy and sell the stock during this period of time, as well as the maximum profit per share.</p>
                 <a href="{% url 'stock:home' %}" class="btn btn-primary">View project</a>
               </div>
             </div>
@@ -51,7 +54,9 @@
               <img src="{% static 'pfsite/sudoku.jpg' %}" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Sudoku Game On</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text">This app gives users the ultimate flexibility to create their own games.
+                  If the input is not valid, an error would show on the click of the solve button.
+                  Otherwise, the solve button would solve/complete the puzzle.</p>
                 <a href="{% url 'sudoku:home' %}" class="btn btn-primary">View project</a>
               </div>
             </div>
@@ -65,7 +70,9 @@
               <img src="{% static 'pfsite/almond-n-chai.jpg' %}" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Almond and Chai Blog</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">This blog app takes full advantage of Django's powerful user management system.
+                  Users can register, reset their password, as well as log in and out. They can create, update, and delete
+                  their own posts and profiles. They can also comment on others' posts and filter posts by a particular author.</p>
                 <a href="https://almond-n-chai.herokuapp.com/" class="btn btn-primary">View project</a>
               </div>
             </div>
@@ -75,7 +82,9 @@
               <img src="{% static 'pfsite/vlog.jpg' %}" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Penny Fang Vlog</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">This app talks with YouTube API to update the views of the existing videos.
+                I did this as a practice to fetch and manipulate data from my own youtube channel. It allows users to search, filter, and sort videos
+                based on keywords and publication date, as well as watch those videos from this website.</p>
                 <a href="{% url 'youtube:home' %}" class="btn btn-primary">View project</a>
               </div>
             </div>
@@ -85,7 +94,9 @@
               <img src="{% static 'pfsite/timezone.jpg' %}" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Timezone Pocket Daemon</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text">This app is inspired by my previous work when my team members are all over the world.
+                It'd be very handy when one wants to convert his/her current date and time into a desired time zone.
+                This app is very lightweight and displays the user's time zone information by default.</p><br>
                 <a href="{% url 'timezone:timezone_home' %}" class="btn btn-primary">View project</a>
               </div>
             </div>
