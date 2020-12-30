@@ -1,17 +1,19 @@
-.name {
+h1 {
   color: white;
   font-size: 5em;
   font-family: 'PT Mono', monospace;
+
+}
+
+div.titles{
+   text-align: center;
+   padding-top: 7em;
 }
 
 .description{
   color: white;
   font-size: 2em;
   font-family: 'PT Mono', monospace;
-}
-
-.titles{
-  text-align: center;
 }
 
 .index_page{
@@ -24,16 +26,35 @@
 }
 
 .socialmedia {
-  padding-left: 65%;
+  text-align: center;
 }
 
+/* buttons */
 td {
   padding-top: 10%;
 }
 
+#portfolio{
+    text-align: right;
+    padding-top: 2em;
+}
+
+#resume{
+    text-align: left;
+    padding-top: 2em;
+}
+
+#socialicons{
+    text-align: center;
+}
+
+a#socialmedia{
+    color: floralwhite;
+}
+
 .btn-xlarge {
     padding: 10px 10px;
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: 'PT Mono', monospace;
     line-height: normal;
     -webkit-border-radius: 8px;
