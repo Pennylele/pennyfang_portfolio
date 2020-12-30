@@ -95,7 +95,7 @@ else:
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'pf_portfolio',
             'USER': 'pf',
-            'PASSWORD': 'sh!nyWing84', # Need to secure this.
+            'PASSWORD': os.environ.get('pf_portfolio_pass'),
             'HOST': 'localhost',
             'PORT': '',
         }
